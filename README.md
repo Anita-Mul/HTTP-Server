@@ -38,8 +38,8 @@ node main.js
 	![在这里插入图片描述](https://img-blog.csdnimg.cn/3fa33ae2ffbe401bb650fc37c2187571.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQW5pdGEtU3Vu,size_20,color_FFFFFF,t_70,g_se,x_16)
 
 
-#### **测试 `GET` 请求**💚 
- - 访问 `http://localhost/`
+#### **测试 `GET` 请求** 
+ - 💚 访问 `http://localhost/`
   ![在这里插入图片描述](https://img-blog.csdnimg.cn/d93cead563224193a1628efb1374dd14.png)
  - 💛 访问 `http://localhost/test.txt`
 	![在这里插入图片描述](https://img-blog.csdnimg.cn/82d12a17b8814b3d853ba89cf5ab0cbc.png)
@@ -59,9 +59,7 @@ node main.js
 
 
 #### **测试 `PUT` 请求** 
- - 💛 修改 Cat.txt 文件内容 `http://localhost:80/./Cat.txt`
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b27930cb5af54239aece835639475955.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQW5pdGEtU3Vu,size_20,color_FFFFFF,t_70,g_se,x_16)
-
+ - 💛 修改 Cat.txt 文件内容 `http://localhost:80/Cat.txt`
 
 #### **测试 `DELETE` 请求**
  - 💜 删除 Cat.txt 文件 `http://localhost:80/Cat.txt`
