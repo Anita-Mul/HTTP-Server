@@ -20,6 +20,7 @@ class RequestParser extends Events {
   };
 
   append (buffer) {
+    // 一个字节一个字节的读取
     for (let offset = 0; offset < buffer.length; offset++) {
       this._state = this._state(buffer[offset]);
     }
@@ -35,7 +36,6 @@ class RequestParser extends Events {
   _read_request_line (char) {
     if (!this._cache) {
       // Method, URI, Version, CR LF
-      // [pointer, Method, URI, Version, CRFlage]
       this._cache = [1, '' ,'' ,'', false];
     }
 
@@ -50,6 +50,7 @@ class RequestParser extends Events {
       this._cache = null;
       return this._read_header_line;
     } else {
+      // 把 ASCII 码转换成字符
       this._cache[this._cache[0]] += String.fromCharCode(char);
     }
 
